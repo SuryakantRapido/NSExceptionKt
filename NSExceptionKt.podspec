@@ -9,9 +9,9 @@ Pod::Spec.new do |spec|
     spec.homepage     = "https://github.com/SuryakantRapido/NSExceptionKt"
     spec.license      = { :type => "MIT", :file => "LICENSE" }
     spec.author       = { "Suryakant" => "suryakant@example.com" }
-    spec.source       = { :git => "https://github.com/SuryakantRapido/NSExceptionKt.git", :tag => "#{spec.version}" }
+    spec.source       = { :git => "https://github.com/SuryakantRapido/NSExceptionKt.git", :tag => "1.0.0" }
     
-    spec.ios.deployment_target = "10.0"
+    spec.ios.deployment_target = "14.0"
   
     # Source files
     spec.source_files  = "NSExceptionKt/**/*.{h,m}"
