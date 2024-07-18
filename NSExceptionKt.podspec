@@ -1,9 +1,9 @@
 Pod::Spec.new do |spec|
     spec.name         = "NSExceptionKt"
     spec.version      = "1.0.0"  # Adjust this to match your library version
-    spec.summary      = "A Kotlin library for handling NSExceptions in iOS"
+    spec.summary      = "A library for handling NSExceptions in iOS"
     spec.description  = <<-DESC
-                         NSExceptionKt is a Kotlin library that provides utilities 
+                         NSExceptionKt is a library that provides utilities 
                          for handling NSExceptions in iOS applications.
                         DESC
     spec.homepage     = "https://github.com/SuryakantRapido/NSExceptionKt"
@@ -13,12 +13,15 @@ Pod::Spec.new do |spec|
     
     spec.ios.deployment_target = "10.0"
   
-    spec.source_files  = "NSExceptionKt/**/*.swift"
+    # Source files
+    spec.source_files  = "NSExceptionKt/**/*.{h,m}"
     spec.exclude_files = "NSExceptionKt/Exclude"
   
-    spec.swift_version = "5.0"
-  
-    # Remove the Kotlin dependency if not required
-    # spec.dependency "Kotlin", "~> 1.5.0"  # Uncomment if your library depends on Kotlin
+    # Frameworks and libraries dependencies
+    # spec.frameworks = 'UIKit'
+    # spec.libraries = 'c++'
+    
+    # Optional: Specify dependencies if any
+    # spec.dependency "SomeDependency", "~> 1.0.0"
   end
   
